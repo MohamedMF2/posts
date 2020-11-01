@@ -1,0 +1,25 @@
+<mat-card>
+  <mat-form-field>
+    <input
+      type="text"
+      matInput
+      [(ngModel)]="enteredTitle"
+      placeholder="Post Title"
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <textarea
+      placeholder="Post Title"
+      matInput
+      cols="30"
+      rows="10"
+      [(ngModel)]="enteredContent"
+    ></textarea
+    ><br />
+  </mat-form-field>
+  <button (click)="onAddPost()" mat-raised-button color="primary">
+    Save Post
+  </button>
+</mat-card>
+
+<!-- <h1 *ngIf="newPost">{{ newPost }}</h1> -->
