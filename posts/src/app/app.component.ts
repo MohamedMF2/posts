@@ -8,10 +8,6 @@ import { Post } from './posts/post.model';
 })
 export class AppComponent {
   title = 'posts';
-  posts :Post[]=[];
-
-  onPostAdd(post :Post){
-    this.posts.push(post)
-  }
+  
 
 }

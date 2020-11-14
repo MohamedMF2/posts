@@ -13,6 +13,8 @@ import {MatButtonModule} from'@angular/material/button'
 import {MatCardModule} from'@angular/material/card'
 import {MatExpansionModule} from'@angular/material/expansion'
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {ReactiveFormsModule} from '@angular/forms'
+import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -26,12 +28,13 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
     MatInputModule,
     MatToolbarModule,
     MatCardModule,
     MatButtonModule,
     MatExpansionModule,
-    
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
